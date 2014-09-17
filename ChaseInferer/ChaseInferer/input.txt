@@ -1,0 +1,4 @@
+A, B, C, D
+fd: A, B, C: D
+fd: D: A
+mvd: A, B: C chase: fd: A: C, D
