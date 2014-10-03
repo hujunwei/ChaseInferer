@@ -12,18 +12,26 @@
 #include <iostream>
 #include <string>
 #include <unordered_set>
+#include <vector>
 using namespace std;
 class Chase {
 private:
     /* attribute list */
-    std::string attr_list;
-    
+    string attr_list;
+    vector<string> fd_strings;
+    vector<string> mvd_strings;
+    vector<string> chase_strings;
+    /* how many attributes */
+    int attr_size;
     
 public:
     Chase();
     ~Chase();
-    std::unordered_set<string> generateSeed();
-    
+    unordered_set<string> generateSeed();
+    void readAttrString(string attrbutes);
+    void parseFdAndMvd(vector<string>& fileContent);
+    void printChase();
+    string removeFormat(string s);
     
 };
 

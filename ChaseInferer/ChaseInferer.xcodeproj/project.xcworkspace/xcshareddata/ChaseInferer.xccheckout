@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>6CCE5F16-3DC2-43A9-B9CE-785E7C594A4F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ChaseInferer</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>49EF824071ABBAFDF418CB4EA6DD444F7179135E</key>
+		<string>https://github.com/hujunwei/ChaseInferer.git</string>
+		<key>FA374F1E29D04113CF40F7B4A188A269CD407819</key>
+		<string>https://github.com/hujunwei/MacbookGitRepo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ChaseInferer/ChaseInferer.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>49EF824071ABBAFDF418CB4EA6DD444F7179135E</key>
+		<string>../../..</string>
+		<key>FA374F1E29D04113CF40F7B4A188A269CD407819</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/hujunwei/ChaseInferer.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>49EF824071ABBAFDF418CB4EA6DD444F7179135E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FA374F1E29D04113CF40F7B4A188A269CD407819</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>49EF824071ABBAFDF418CB4EA6DD444F7179135E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ChaseInferer</string>
+		</dict>
+	</array>
+</dict>
+</plist>

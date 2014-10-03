@@ -7,16 +7,39 @@
 //
 
 #include <iostream>
-#include "Chase.cpp"
+#include "Chase.h"
 #include <fstream>
+#include <vector>
+#include <string>
 using namespace std;
 
 
+bool readFileContent(vector<string>& fileContent) {
+    ifstream infile;
+    infile.open("/Users/junweihu/Github/MacbookGitRepo/ChaseInferer/ChaseInferer/ChaseInferer/ChaseInferer/input.txt");
+
+    if (!infile) {
+        cerr << "Invalid input file! " << endl;
+        return false;
+    }
+    char buffer[500];
+    while (!infile.eof()) {
+        infile.getline(buffer, 200);
+        string Str = string(buffer);
+        fileContent.push_back(Str);
+    }
+    infile.close();
+    return true;
+}
 
 
-
-
-
+void printFileContent(vector<string>& fileContent) {
+    cout << "--File content begin--" << endl;
+    for (int i = 0 ; i < fileContent.size(); i++) {
+        cout << fileContent[i] << endl;
+    }
+    cout << "--File content end--" << endl;
+}
 
 
 
@@ -28,18 +51,17 @@ int main(int argc, const char * argv[])
 
     // insert code here...
     std::cout << "Hello, World!\n";
-    //Chase* chaseManager = new Chase();
-    ifstream file;
-    auto x = NULL;
-    file.open("input.txt");
-    if (!file) {
-        perror("Invalid input file!\n");
-        return EXIT_FAILURE;
-    }
-    file >> x;
-    cout << x << endl;
-    file.close();
+    Chase* chaseManager = new Chase();
+    /* read file to a fileContent */
+    vector<string> fileContent;
+    bool isReadSuccess = readFileContent(fileContent);
+    printFileContent(fileContent);
+    /* parse file to Chase object */
+    chaseManager->readAttrString(fileContent[0]);
+    chaseManager->parseFdAndMvd(fileContent);
+    chaseManager->printChase();
     
-    return EXIT_SUCCESS;
+    
+    return isReadSuccess ? EXIT_SUCCESS : EXIT_FAILURE;
 }
 
